@@ -4,7 +4,7 @@ func BinarySearchAsc(arr []int, target int) int {
 	high := len(arr) - 1
 	low := 0
 	for low <= high {
-		mid := high + low/2
+		mid := (high + low) / 2
 		if arr[mid] == target {
 			return mid
 		}
@@ -22,7 +22,7 @@ func BinarySearchDesc(arr []int, target int) int {
 	high := len(arr) - 1
 	low := 0
 	for low <= high {
-		mid := high + low/2
+		mid := (high + low) / 2
 		if arr[mid] == target {
 			return mid
 		}
